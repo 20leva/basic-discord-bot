@@ -8,13 +8,13 @@ It is currently not very customizable, but I am planning on making it more usefu
 How to use it
 -------------
 
-First, you must [make a Discord application](#), then, [save the bot's token](#).
+First, you must [make a Discord application](https://discord.com/developers/applications), then, [save the bot's token](#).
 
 Then, you should [make a Discord guild](#) ("guild" is the technical term for a Discord server), and [save its ID](#).
 
 There are 2 ways to run the bot script:
 
-- With [Docker](#docker)
+- With [Docker](https://www.docker.com/)
 - With the standalone [Python script](#python-script-only)
 
 Docker
@@ -30,7 +30,7 @@ Docker
 
     - Replace `<token>` with your bot's token, and replace `<guild id>` with your guild's ID
 
-2. [Install Docker](#)
+2. [Install Docker](https://docs.docker.com/engine/install/)
 3. Run this command in the terminal `docker run --rm --env-file ./.env -d --name discord-bot agentell/basic-discord-bot:<tag>`
     - `--rm` means you want the container to be deleted once it stops.
     - `--env-file ./.env` specifies that you wand to load the environment variables defined in the `.env` file into the container.
